@@ -57,12 +57,21 @@ var mini_tiles = [
 
 var tile_size = 2
 var mini_tile = 64
-var width = 40  # width of map (in tiles)
-var height = 20  # height of map (in tiles)
+var width = 20  # width of map (in tiles)
+var height = 10  # height of map (in tiles)
+
+onready var Key = preload("res://Key/key.tscn")
+onready var Exit = preload("res://Exit/Exit.tscn")
 
 func _ready():
 	randomize()
 	make_maze()
+	var key = Key.instance()
+	key.translate(Vector3((width*tile_size)-1.5,1,0.5))
+	add_child(key)
+	var exit = Exit.instance()
+	exit.translate(Vector3((width*tile_size)-1.5,0.1,(height*tile_size)-1.5))
+	add_child(exit)
 	
 func check_neighbors(cell, unvisited):
 	# returns an array of cell's unvisited neighbors
