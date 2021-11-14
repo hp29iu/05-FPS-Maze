@@ -146,3 +146,4 @@ shape = SubResource( 9 )
 
 [connection signal="body_entered" from="Growl" to="." method="_on_Area_body_entered"]
 [connection signal="body_entered" from="Kill" to="." method="_on_Kill_body_entered"]
+[connection signal="body_exited" from="Kill" to="." method="_on_Kill_body_exited"]

@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=2]
+[gd_scene load_steps=16 format=2]
 
 [ext_resource path="res://Player/Player.gd" type="Script" id=1]
 [ext_resource path="res://Enemy/Enemies.gd" type="Script" id=2]
@@ -10,6 +10,9 @@
 [ext_resource path="res://Assets/muzzleflash.obj" type="ArrayMesh" id=8]
 [ext_resource path="res://Player/Muzzle.tres" type="Material" id=9]
 [ext_resource path="res://Player/Flash.gd" type="Script" id=10]
+[ext_resource path="res://Assets/Dangerous Dungeon.ogg.ogg" type="AudioStream" id=11]
+[ext_resource path="res://Assets/Key.wav" type="AudioStream" id=12]
+[ext_resource path="res://UI/HUD.gd" type="Script" id=13]
 
 [sub_resource type="CapsuleShape" id=1]
 radius = 0.5
@@ -108,5 +111,50 @@ texture = ExtResource( 7 )
 [node name="Menu" parent="UI" instance=ExtResource( 4 )]
 pause_mode = 2
 visible = false
+
+[node name="HUD" type="Control" parent="UI"]
+margin_right = 40.0
+margin_bottom = 40.0
+script = ExtResource( 13 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ColorRect" type="ColorRect" parent="UI/HUD"]
+margin_top = 570.0
+margin_right = 1024.0
+margin_bottom = 600.0
+color = Color( 0, 0, 0, 0.501961 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Ammo" type="Label" parent="UI/HUD"]
+margin_top = 580.0
+margin_right = 130.0
+margin_bottom = 610.0
+text = "Ammo:"
+
+[node name="Health" type="Label" parent="UI/HUD"]
+margin_left = 443.0
+margin_top = 580.0
+margin_right = 573.0
+margin_bottom = 610.0
+text = "Health:"
+
+[node name="Score" type="Label" parent="UI/HUD"]
+margin_left = 896.0
+margin_top = 580.0
+margin_right = 1026.0
+margin_bottom = 610.0
+text = "Score:"
+
+[node name="Music" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 11 )
+autoplay = true
+
+[node name="Key" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 12 )
+volume_db = 5.0
 
 [connection signal="timeout" from="Player/Pivot/blasterG/Flash/Timer" to="Player/Pivot/blasterG/Flash" method="_on_Timer_timeout"]

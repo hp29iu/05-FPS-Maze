@@ -1,6 +1,12 @@
 extends Node
 
 var menu = null
+var health = 100
+var ammo = 50
+var score = 0
+
+var updated = false
+var damaged = false
 
 const SAVE_PATH = "res://settings.cfg"
 var save_file = ConfigFile.new()
@@ -40,3 +46,24 @@ func save_input():
 		for a in actions:
 			save_file.set_value("Inputs", i, a)
 	save_file.save(SAVE_PATH)
+
+func update_ammo(a):
+	ammo += a
+	updated = true
+
+func update_damage(d):
+	health += d
+	if health < 0:
+		health = 100
+		ammo = 50
+		score = 0
+		var _scene = get_tree().change_scene("res://UI/Lose.tscn")
+	damaged = true
+	
+func update_score(s):
+	score += s
+	if score >= 100:
+		health = 100
+		ammo = 50
+		score = 0
+		var _scene = get_tree().change_scene("res://UI/Win.tscn")

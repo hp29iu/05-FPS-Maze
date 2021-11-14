@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/Dangerous Dungeon.ogg.ogg-c362f5f9921c8db63d1821f3456d0f99.oggstr"
+
+[deps]
+
+source_file="res://Assets/Dangerous Dungeon.ogg.ogg"
+dest_files=[ "res://.import/Dangerous Dungeon.ogg.ogg-c362f5f9921c8db63d1821f3456d0f99.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

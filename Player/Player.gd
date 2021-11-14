@@ -40,7 +40,9 @@ func _physics_process(delta):
 	velocity.z = desired_velocity.z
 	velocity = move_and_slide(velocity, Vector3.UP, true)
 	
-	if Input.is_action_pressed("shoot") and !flash.visible:
+	
+	if Input.is_action_pressed("shoot") and !flash.visible and Global.ammo > 0:
+		Global.update_ammo(-1)
 		flash.shoot()
 		if rc.is_colliding():
 			var c = rc.get_collider()
@@ -49,4 +51,5 @@ func _physics_process(delta):
 			decal.global_transform.origin = rc.get_collision_point()
 			decal.look_at(rc.get_collision_point() + rc.get_collision_normal(), Vector3.UP)
 			if c.is_in_group("Enemy"):
+				Global.update_score(10)
 				c.queue_free()
