@@ -13,7 +13,7 @@ AI has dominated the world. Your mission is to escape from the disasterous maze 
 - Add music
 - Add sound effects
 - Add Shaders
-- Add Doom-style HUD
+- Add Ammo and Health on HUD
 
 ## References
 Assets provided by 
