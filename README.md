@@ -30,6 +30,11 @@ Assets provided by
 (https://opengameart.org/content/bullet-decal)
 (https://opengameart.org/content/muzzle-flash-with-model)
 
+Shaders provided by [Godot Shaders]
+(https://godotshaders.com/shader/fireworks/)
+(https://godotshaders.com/shader/fire-effect/)
+(https://godotshaders.com/shader/clouds-in-motion/)
+
 Audio provided by [patrickdearteaga] 
 (https://patrickdearteaga.com/royalty-free-music/dangerous-dungeon/)
 
