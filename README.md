@@ -1,7 +1,7 @@
 # 05-FPS-Maze
 <Project 5 - FPS Maze Game> AI Dooms Day, 13 November 2021
 
-AI has dominated the world. Your mission is to escape from the disasterous maze filled with multiple Robots trying to terminate you. Please utilize your gun effectively to acquire the "key" to end the infinte loop of maze.
+AI has dominated the world. Your mission is to escape from the disastrous maze filled with multiple Robots trying to terminate you. Please utilize your gun effectively to acquire the "key" to end the infinite loop of the maze.
 
 ## Implementation
 - Add MiniMap
