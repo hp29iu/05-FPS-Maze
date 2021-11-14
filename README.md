@@ -10,7 +10,7 @@ AI has dominated the world. Your mission is to escape from the disasterous maze 
 - Add bullet decal
 - Make maze to be procedurally generated
 - Make enemies to be randomly located
-- Make enemies to look towards you all the time
+- Make enemies to look towards the player all the time
 - Add music
 - Add sound effects
 - Add Shaders
