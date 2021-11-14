@@ -4,30 +4,34 @@
 AI has dominated the world. Your mission is to escape from the disasterous maze filled with multiple Robots trying to terminate you. Please utilize your gun effectively to acquire the "key" to end infinte loop of maze.
 
 ## Implementation
--Add MiniMap
--Add a weapon to shoot (Space Bar or Mouse Left Button)
--Add muzzle flash
--Add bullet decal
--Make maze to be procedurally generated
--Make enemies to be randomly located
--Add music
--Add sound effects
--Add Shaders
--Add Doom-style HUD
+- Add MiniMap
+- Add a weapon to shoot (Space Bar or Mouse Left Button)
+- Add muzzle flash
+- Add bullet decal
+- Make maze to be procedurally generated
+- Make enemies to be randomly located
+- Add music
+- Add sound effects
+- Add Shaders
+- Add Doom-style HUD
 
 ## References
-Assets provided by [kenney.nl] [ambientcg.com] [opengameart.org]
+Assets provided by 
+[kenney.nl] 
 (https://kenney.nl/assets/platformer-kit)
 (https://kenney.nl/assets/blocky-characters)
 (https://kenney.nl/assets/road-textures)
 (https://kenney.nl/assets/simple-space)
 (https://kenney.nl/assets/blaster-kit)
+[ambientcg.com]
 (https://ambientcg.com/view?id=Grass004)
 (https://ambientcg.com/view?id=Bricks066)
+[opengameart.org]
 (https://opengameart.org/content/bullet-decal)
 (https://opengameart.org/content/muzzle-flash-with-model)
 
-Audio provided by [patrickdearteaga] ()
+Audio provided by [patrickdearteaga] 
+(https://patrickdearteaga.com/royalty-free-music/dangerous-dungeon/)
 
 Sound Effect provided by Hyunbin Park
 
