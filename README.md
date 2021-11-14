@@ -5,22 +5,27 @@ AI has dominated the world. Your mission is to escape from the disasterous maze 
 
 ## Implementation
 -Add MiniMap
--Add a weapon
+-Add a weapon to shoot (Space Bar or Mouse Left Button)
 -Add muzzle flash
 -Add bullet decal
--Add procedurally generated maze
--Make enemies to be located randomly
+-Make maze to be procedurally generated
+-Make enemies to be randomly located
 -Add music
 -Add sound effects
+-Add Shaders
 -Add Doom-style HUD
 
 ## References
-Assets provided by [kenney.nl]
+Assets provided by [kenney.nl] [ambientcg.com] [opengameart.org]
 (https://kenney.nl/assets/platformer-kit)
 (https://kenney.nl/assets/blocky-characters)
 (https://kenney.nl/assets/road-textures)
 (https://kenney.nl/assets/simple-space)
 (https://kenney.nl/assets/blaster-kit)
+(https://ambientcg.com/view?id=Grass004)
+(https://ambientcg.com/view?id=Bricks066)
+(https://opengameart.org/content/bullet-decal)
+(https://opengameart.org/content/muzzle-flash-with-model)
 
 Audio provided by [patrickdearteaga] ()
 
