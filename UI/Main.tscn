@@ -2,7 +2,7 @@
 
 [ext_resource path="res://UI/Main.gd" type="Script" id=1]
 
-[sub_resource type="Shader" id=3]
+[sub_resource type="Shader" id=1]
 code = "shader_type canvas_item;
 
 uniform vec4 BackColor : hint_color = vec4(0.0, 0.4, 0.58, 1.0);
@@ -75,8 +75,8 @@ void fragment() {
 	COLOR = vec4(Color,1.);
 }"
 
-[sub_resource type="ShaderMaterial" id=4]
-shader = SubResource( 3 )
+[sub_resource type="ShaderMaterial" id=2]
+shader = SubResource( 1 )
 shader_param/BackColor = Color( 0, 0.4, 0.58, 1 )
 shader_param/CloudColor = Color( 0.18, 0.7, 0.87, 1 )
 shader_param/speed = 0.1
@@ -90,7 +90,7 @@ __meta__ = {
 }
 
 [node name="Background" type="ColorRect" parent="."]
-material = SubResource( 4 )
+material = SubResource( 2 )
 margin_right = 1024.0
 margin_bottom = 600.0
 color = Color( 0.266667, 0.266667, 0.266667, 1 )
